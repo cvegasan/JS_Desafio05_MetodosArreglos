@@ -1,0 +1,105 @@
+body *{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding:0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+.cls-ingreso-tarea {
+  display:flex;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    justify-content:space-between;
+}
+.cls-titulo-formulario{
+  padding-bottom: 10px;
+}
+.cls-textbox-tarea{
+  width:75%;
+  height:25px;
+  padding-left:40px;
+}
+.cls-totales-lista {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0px;
+}
+.cls-totales-tarea {
+  width: 30%;
+}
+.cls-totales-tarea strong{
+  color:black;
+}
+.cls-tabla-tareas {
+  width: 70%;
+  border-collapse: collapse;
+}
+/* INI alineacion de columnas tablas */
+th:nth-child(1), td:nth-child(1) {
+  text-align: center;
+  width: 10%;
+}
+th:nth-child(2), td:nth-child(2) {
+  text-align: left;
+  width: 70%;
+}
+th:nth-child(3), td:nth-child(3) {
+  text-align: center;
+  width: 10%;
+}
+th:nth-child(4), td:nth-child(4) {
+  text-align: center;
+  width: 10%;
+}
+/* FIN alineacion de columnas tablas */
+.cls-fondo-formulario{
+  background-color: #ECECEC;
+  padding: 20px;
+}
+.cls-subrayado-titulo{
+  padding-bottom: 20px;
+}
+.cls-titulo-textbox{
+  font-size: 14px;
+  color: #676767;
+  padding-bottom: 5px;
+}
+.cls-resumen-totales{
+  font-size: 16px;
+  color: #676767;
+}
+/* INI boton transparente */
+.cls-button-transparente {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+/* FIN boton transparente */
+.cls-eliminar-rojo{
+  font-size:16px;
+  font-weight: 900;
+  color:red;
+}
+
+.cls-button-verde{
+  background-color: #007947;
+  width:20%;
+  height:30px;
+  border-radius:5px;
+  border-style: none;
+}
+.cls-agregar-blanco{
+  color:white;
+}
+
+input {
+  padding-left: 10px !important;
+  margin: 0 !important;
+}

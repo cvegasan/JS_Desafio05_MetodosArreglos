@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List</title>
+<!-- CSS -->
+<link rel="stylesheet" href="./assets/css/estilos.css" />
+</head>
+<body>
+  <div class="container cls-fondo-formulario">
+    <h1 class="cls-titulo-formulario">Todo List</h1>
+      <div class="cls-subrayado-titulo">
+        <hr/>
+      </div>
+      <div >
+        <h5 class="cls-titulo-textbox">Nueva tarea</h5>
+      </div>
+      <div class="cls-ingreso-tarea">
+        <input type="text" id="nuevaTarea" class="cls-textbox-tarea" placeholder="Ingrese una tarea">
+        <button id="agregarTarea" class="cls-button-verde cls-agregar-blanco">Agregar</button>
+      </div>
+      <div class="cls-totales-lista">
+           <!--totales-->
+          <div class="cls-totales-tarea cls-resumen-totales">
+            <p id="cuentaTareas">Total: <strong>0</strong></p>
+            <p id="tareasRealizadas">Realizadas: <strong>0</strong></p>
+          </div>
+           <!--lista de tareas-->
+          <table class="cls-tabla-tareas">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tarea</th>
+                <th></th> <!--Pendiente o Realizado-->
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="listaTareas" class="cls-resumen-totales">
+              <!-- INI Aquí se agregarán las filas de la tabla dinámicamente -->
+                  <!--INI Ejemplo de como debe quedar-->
+                    <!--FIN Ejemplo de como debe quedar-->
+              <!-- FIN Aquí se agregarán las filas de la tabla dinámicamente -->
+            </tbody>
+          </table>
+      </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
